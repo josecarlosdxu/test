@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Test</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/main.css">
+	</head>
+   <body>
+      <main>
+         <header class="header">
+            <a href="#" class="homebtn" title="home">
+            <img src="img/logo-fw.svg" alt="logo">					
+            </a>
+            <h1 class="title">Test</h1>
+            <nav class="links">
+               <a href="#" class="header-link is-selected">Refunds</a>
+               <a href="#" class="header-link">Bundles</a>
+            </nav>
+            <input type="search" class="search" placeholder="Search">
+            <aside class="user">
+               <input type="checkbox" id="toggleuser" class="togglecheck">
+               <label for="toggleuser" class="user-name"><img src="img/oval-1.png" alt="" class="thumb">Fernando Galindo</label>
+               <label for="toggleuser" class="user-close"></label>
+               <nav class="user-options">
+                  <button class="user-option">Settings</button>
+                  <button class="user-option">Account</button>
+                  <button class="user-option">Close session</button>
+               </nav>
+            </aside>
+         </header>
+         <section class="topfilters">
+            <aside class="filter" data-jsfilter="filter">
+               <input class="togglecheck" id="portalcodefilter" type="checkbox" data-jsfilter="toggle">
+               <label for="portalcodefilter" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Portal code">Portal code</label>
+               <section class="filter-body">
+                  <a href="#" class="filter-option" data-jsfilter="option" name="CAN">CAN</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="CAD">CAD</a>
+               </section>
+            </aside>
+            <aside class="filter" data-jsfilter="filter">
+               <input class="togglecheck" id="datefilter" type="checkbox" data-jsfilter="toggle">
+               <label for="datefilter" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Date">Date</label>
+               <section class="filter-body">
+                  <a href="#" class="filter-option" data-jsfilter="option" name="10/20/2016">10/20/2016</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="03/25/2018">03/25/2018</a>
+               </section>
+            </aside>
+            <aside class="filter" data-jsfilter="filter">
+               <input class="togglecheck" id="paymentstatusfilter" type="checkbox" data-jsfilter="toggle">
+               <label for="paymentstatusfilter" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Payment Status">Payment Status</label>
+               <section class="filter-body">
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Initiated">Initiated</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Sending">Sending</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Received">Received</a>
+               </section>
+            </aside>
+            <aside class="filter" data-jsfilter="filter">
+               <input class="togglecheck" id="sendingbankfilter" type="checkbox" data-jsfilter="toggle">
+               <label for="sendingbankfilter" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Sending bank">Sending bank</label>
+               <section class="filter-body">
+                  <a href="#" class="filter-option" data-jsfilter="option" name="CashproFX">CashproFX</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="03/25/2018">YourbankFD</a>
+               </section>
+            </aside>
+            <aside class="filter" data-jsfilter="filter">
+               <input class="togglecheck" id="refundstatusfilter" type="checkbox" data-jsfilter="toggle">
+               <label for="refundstatusfilter" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Refund Status">Refund Status</label>
+               <section class="filter-body">
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Initiated">Initiated</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Sending">Sending</a>
+                  <a href="#" class="filter-option" data-jsfilter="option" name="Received">Received</a>
+               </section>
+            </aside>
+         </section>
+         <section class="page-content">
+            <h2 class="title">Refunds</h2>
+            <table class="table">
+               <colgroup>
+                  <col style="min-width: 3rem; max-width: 4rem;">
+                  <col style="min-width: 7rem;">
+                  <col style="min-width: 7.5rem;">
+                  <col>
+                  <col style="min-width: 7rem" ;>
+                  <col style="min-width: 6rem" ;>
+                  <col style="min-width:5rem;">
+                  <col>
+                  <col style="min-width:7rem;">
+                  <col style="min-width:9.5rem;">
+                  <col style="min-width:9rem;">
+               </colgroup>
+               <thead class="table-thead">
+                  <tr class="table-row">
+                     <th class="table-item table-item--check"><input type="checkbox"></th>
+                     <th class="table-item">portal code</th>
+                     <th class="table-item">creation date</th>
+                     <th class="table-item">payment id</th>
+                     <th class="table-item">refund amt</th>
+                     <th class="table-item right">actual amt</th>
+                     <th class="table-item">sent ccy</th>
+                     <th class="table-item">bundle id</th>
+                     <th class="table-item right">paymt status</th>
+                     <th class="table-item">sending bank</th>
+                     <th class="table-item">refund status</th>
+                  </tr>
+               </thead>
+               <tbody class="table-tbody">
+                  <tr class="table-row" data-jstable="row">
+                     <td class="table-item table-item--check"><input type="checkbox"></td>
+                     <td class="table-item"><button class="button button--togglerow">CAN</button></td>
+                     <td class="table-item">03/27/2018</td>
+                     <td class="table-item"><a href="#">CAN123456789</a></td>
+                     <td class="table-item">14,486.00 CAD</td>
+                     <td class="table-item right"> </td>
+                     <td class="table-item"> </td>
+                     <td class="table-item"><a href="#">REF123456789</a></td>
+                     <td class="table-item right">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="icon1" data-jsfilter="toggle" type="checkbox">
+                           <label for="icon1" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Icon">Icon</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconD">Icon 1</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconP">Icon 2</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="sbank1" data-jsfilter="toggle" type="checkbox">
+                           <label for="sbank1" class="filter-title" data-jsfilter="label" title="--">Cashpro FX</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="Cashpro FX">Cashpro FX</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="YourbankFD">YourbankFD</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item initiated">INITIATED</td>
+                  </tr>
+                  <tr class="table-row table-row--content" data-jstable="content">
+                     <td class="table-item" colspan="100">
+                        <div class="table-item--content">Content here</div>
+                     </td>
+                  </tr>
+                  <tr class="table-row selected" data-jstable="row">
+                     <td class="table-item table-item--check"><input type="checkbox"></td>
+                     <td class="table-item"><button class="button button--togglerow">CAP</button></td>
+                     <td class="table-item">03/27/2018</td>
+                     <td class="table-item"><a href="#">CAN123456789</a></td>
+                     <td class="table-item">14,486.00 CAD</td>
+                     <td class="table-item right">14,486.00</td>
+                     <td class="table-item">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="cad1" data-jsfilter="toggle" type="checkbox">
+                           <label for="cad1" class="filter-title" data-jsfilter="label" title="CAD">CAD</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="CAD">CAD</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="CAP">CAP</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item">--</td>
+                     <td class="table-item right">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="icon2" data-jsfilter="toggle" type="checkbox">
+                           <label for="icon2" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Icon">Icon</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconD">Icon 1</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconP">Icon 2</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="sbank2" data-jsfilter="toggle" type="checkbox">
+                           <label for="sbank2" class="filter-title" data-jsfilter="label" title="--">--</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="Cashpro FX">Cashpro FX</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="YourbankFD">YourbankFD</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item ">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="stu1" data-jsfilter="toggle" type="checkbox">
+                           <label for="stu1" class="filter-title received" data-jsfilter="label" title="RECEIVED">RECEIVED</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option finished" data-jsfilter="option" name="FINISHED">FINISHED</a>
+                           </section>
+                        </aside>
+                     </td>
+                  </tr>
+                  <tr class="table-row table-row--content" data-jstable="content">
+                     <td class="table-item" colspan="100">
+                        <section class="table-item--content">
+                           <div class="tab-container">
+                              <input type="radio" name="ttabs1" class="tab-toogle" id="ttabs11" checked>
+                              <label for="ttabs11" class="tab-btn">Refund info</label>
+                              <section class="tab-content">
+                                 <div class="col xl-30">
+                                    <h4 class="subtitle text-center mt-1">Refund Info</h4>
+                                    <dl class="mt-1">
+                                       <dt>Portal Code</dt>
+                                       <dd>CAP</dd>
+                                       <dt>Creation Date</dt>
+                                       <dd>03/17/2018 10:39</dd>
+                                       <dt>Payment ID</dt>
+                                       <dd>PTU517977838</dd>
+                                       <dt>Refund Amt</dt>
+                                       <dd>REF123</dd>
+                                       <dt>Refund Status</dt>
+                                       <dd>
+                                          <aside class="filter" data-jsfilter="filter">
+                                             <input class="togglecheck" id="rfst1" data-jsfilter="toggle" type="checkbox">
+                                             <label for="rfst1" class="filter-title initiated" data-jsfilter="label" title="INITIATED">INITIATED</label>
+                                             <section class="filter-body">
+                                                <a href="#" class="filter-option received" data-jsfilter="option" name="RECEIVED">RECEIVED</a>
+                                                <a href="#" class="filter-option finished" data-jsfilter="option" name="FINISHED">FINISHED</a>
+                                             </section>
+                                          </aside>
+                                       </dd>
+                                       <dt>Refund Reason</dt>
+                                       <dd>
+                                          <aside class="filter" data-jsfilter="filter">
+                                             <input class="togglecheck" id="rfrs1" data-jsfilter="toggle" type="checkbox">
+                                             <label for="rfrs1" class="filter-title" data-jsfilter="label" title="Chargeback">Chargeback</label>
+                                             <section class="filter-body">
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="Refund to payer">Refund to payer</a>
+                                             </section>
+                                          </aside>
+                                       </dd>
+                                    </dl>
+                                 </div>
+                                 <div class="col xl-30">
+                                    <h4 class="subtitle  text-center mt-1">Received Info</h4>
+                                    <dl class="mt-1">
+                                       <dt>Date Received</dt>
+                                       <dd>24/03/2018</dd>
+                                       <dt>Bank Reference</dt>
+                                       <dd>8913234567</dd>
+                                       <dt>Bundle Amount</dt>
+                                       <dd>43,066.00 USD</dd>
+                                       <dt>Amount Received</dt>
+                                       <dd>11,990.00 USD</dd>
+                                       <dt>Bank Reference</dt>
+                                       <dd>CITI-123</dd>
+                                    </dl>
+                                 </div>
+                                 <div class="col xl-40">
+                                    <h4 class="subtitle  text-center mt-1">Payout Info</h4>
+                                    <dl class="mt-1">
+                                       <dt>Payout Status</dt>
+                                       <dd>
+                                          <aside class="filter filter--view" data-jsfilter="filter">
+                                             <input class="togglecheck" id="pystt1" data-jsfilter="toggle" type="checkbox">
+                                             <label for="pystt1" class="filter-title " data-jsfilter="label" title="--">Template to review</label>
+                                             <section class="filter-body">
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="Cashpro FX">Cashpro FX</a>
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="YourbankFD">YourbankFD</a>
+                                             </section>
+                                          </aside>
+                                       </dd>
+                                       <dt>Payout Bank</dt>
+                                       <dd>
+                                          <aside class="filter" data-jsfilter="filter">
+                                             <input class="togglecheck" id="pybk1" data-jsfilter="toggle" type="checkbox">
+                                             <label for="pybk1" class="filter-title" data-jsfilter="label" title="--">CityDirect</label>
+                                             <section class="filter-body">
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="Cashpro FX">Cashpro FX</a>
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="YourbankFD">YourbankFD</a>
+                                             </section>
+                                          </aside>
+                                       </dd>
+                                       <dt>Payout Amt</dt>
+                                       <dd>11,870.10 USD</dd>
+                                       <dt>Payout Currency</dt>
+                                       <dd><input type="text" class="form-input" value="1.28"></dd>
+                                       <dt>Payout Account</dt>
+                                       <dd>
+                                          <aside class="filter" data-jsfilter="filter">
+                                             <input class="togglecheck" id="pyac1" data-jsfilter="toggle" type="checkbox">
+                                             <label for="pyac1" class="filter-title" data-jsfilter="label" title="CITI-1234567">CITI-1234567</label>
+                                             <section class="filter-body">
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="CITI-336699">CITI-336699</a>
+                                                <a href="#" class="filter-option" data-jsfilter="option" name="CITI-224466">CITI-224466</a>
+                                             </section>
+                                          </aside>
+                                       </dd>
+                                       <dt>FX Rate</dt>
+                                       <dd><input type="text" class="form-input" value="1.28"></dd>
+                                       <dt>Total Amount to Customer</dt>
+                                       <dd>15,193.73 CAD</dd>
+                                       <dt>Refund Profit</dt>
+                                       <dd>119.9 USD</dd>
+                                       <dt>Flywire Rate</dt>
+                                       <dd>1,27</dd>
+                                       <dt>Payout Date</dt>
+                                       <dd>03/17/2018</dd>
+                                       <dt></dt>
+                                       <dd ><button class="button button--primary button--big ml-1 mt-1">SAVE</button></dd>
+                                    </dl>
+                                 </div>
+                              </section>
+                              <input type="radio" name="ttabs1" class="tab-toogle" id="ttabs12">
+                              <label for="ttabs12" class="tab-btn">Original payment info</label>
+                              <section class="tab-content justify-start">
+                                 <h4 class="subtitle mv-1 mh-2">Original payment info</h4>
+                              </section>
+                              <input type="radio" name="ttabs1" class="tab-toogle" id="ttabs13">
+                              <label for="ttabs13" class="tab-btn">Comments</label>
+                              <section class="tab-content justify-start">
+                                 <h4 class="subtitle mv-1  mh-2">Comments</h4>
+                              </section>
+                           </div>
+                        </section>
+                     </td>
+                  </tr>
+                  <tr class="table-row" data-jstable="row">
+                     <td class="table-item table-item--check"><input type="checkbox"></td>
+                     <td class="table-item"><button class="button button--togglerow">CAN</button></td>
+                     <td class="table-item">03/27/2018</td>
+                     <td class="table-item"><a href="#">CAN123456789</a></td>
+                     <td class="table-item">14,486.00 CAD</td>
+                     <td class="table-item right"> </td>
+                     <td class="table-item"> </td>
+                     <td class="table-item"><a href="#">REF123456789</a></td>
+                     <td class="table-item right">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="icon31" data-jsfilter="toggle" type="checkbox">
+                           <label for="icon31" class="filter-title filter-title--placeholder" data-jsfilter="label" title="Icon">Icon</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconD">Icon 1</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="IconP">Icon 2</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="sbank31" data-jsfilter="toggle" type="checkbox">
+                           <label for="sbank31" class="filter-title" data-jsfilter="label" title="--">--</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option" data-jsfilter="option" name="Cashpro FX">Cashpro FX</a>
+                              <a href="#" class="filter-option" data-jsfilter="option" name="YourbankFD">YourbankFD</a>
+                           </section>
+                        </aside>
+                     </td>
+                     <td class="table-item">
+                        <aside class="filter" data-jsfilter="filter">
+                           <input class="togglecheck" id="stu31" data-jsfilter="toggle" type="checkbox">
+                           <label for="stu31" class="filter-title finished" data-jsfilter="label" title="FINISHED">FINISHED</label>
+                           <section class="filter-body">
+                              <a href="#" class="filter-option received" data-jsfilter="option" name="RECEIVED">RECEIVED</a>
+                           </section>
+                        </aside>
+                     </td>
+                  </tr>
+                  <tr class="table-row table-row--content" data-jstable="content">
+                     <td class="table-item" colspan="100">
+                        <div class="table-item--content">Content here</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+      </main>
+      <script src="js/main.min.js"></script>
+   </body>
+</html>
